@@ -1,0 +1,34 @@
+/**
+ * Shop OpenDays.
+ */
+.shop-opendays {
+  --dashicon-yes-color: #080;
+  --dashicon-no-color: #800; }
+  .shop-opendays fieldset *,
+  .shop-opendays.wrap .dashicons {
+    vertical-align: middle; }
+  .shop-opendays .datepicker {
+    width: 100px; }
+  .shop-opendays .info {
+    float: right; }
+  .shop-opendays .subsubsub li:before {
+    display: inline-block;
+    margin-right: 3px;
+    content: "|"; }
+  .shop-opendays .subsubsub li:first-child:before {
+    display: none; }
+  .shop-opendays .nav-tab {
+    vertical-align: top; }
+  .shop-opendays .tab {
+    display: none; }
+    .shop-opendays .tab.active {
+      display: block;
+      margin-top: 15px; }
+  .shop-opendays .dashicons-plus-alt:before {
+    content: "\f502"; }
+  .shop-opendays .dashicons-yes {
+    color: var(--dashicon-yes-color); }
+  .shop-opendays .dashicons-no {
+    color: var(--dashicon-no-color); }
+  .shop-opendays .dashicons.unsaved:after {
+    content: "*"; }

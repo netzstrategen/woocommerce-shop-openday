@@ -1,0 +1,63 @@
+/**
+ * Shop OpenDays.
+ */
+
+.shop-opendays {
+  --dashicon-yes-color: #080;
+  --dashicon-no-color: #800;
+
+  fieldset *,
+  &.wrap .dashicons {
+    vertical-align: middle;
+  }
+
+  .datepicker {
+    width: 100px;
+  }
+
+  .info {
+    float: right;
+  }
+
+  .subsubsub li {
+    &:before {
+      display: inline-block;
+      margin-right: 3px;
+      content: "|";
+    }
+    &:first-child:before {
+      display: none;
+    }
+  }
+
+  .nav-tab {
+    vertical-align: top;
+  }
+
+  .tab {
+    display: none;
+
+    &.active {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+  .dashicons {
+    &-plus-alt:before {
+      content: "\f502";
+    }
+
+    &-yes {
+      color: var(--dashicon-yes-color);
+    }
+
+    &-no {
+      color: var(--dashicon-no-color);
+    }
+
+    &.unsaved:after {
+      content: "*";
+    }
+  }
+}
